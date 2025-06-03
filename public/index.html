@@ -13,7 +13,14 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>React App</title>
   </head>
-  <body class="light">
+  <body>
+    <script>
+      (function () {
+        var storedTheme = localStorage.getItem("theme");
+        var theme = storedTheme ? storedTheme : "light";
+        document.body.className = theme;
+      })();
+    </script>
     <div id="root"></div>
   </body>
 </html>
