@@ -34,8 +34,8 @@ const NavBar = () => {
       </div>
 
       {mobileMenuOpen && (
-        <div className="absolute w-full shadow-sm sm:hidden z-40">
-          <nav className="flex flex-col space-y-2 p-4">
+        <div className="absolute w-full shadow-sm sm:hidden bg-white border-t-2 border-border">
+          <nav className="flex flex-col space-y-2 py-4">
             <Link
               to="/"
               onClick={() => setMobileMenuOpen(false)}
@@ -46,7 +46,7 @@ const NavBar = () => {
             <Link
               to="/about"
               onClick={() => setMobileMenuOpen(false)}
-              className="text-gray-700 hover:text-black flex justify-center"
+              className="text-gray-700 hover:text-black flex justify-center p-0"
             >
               About
             </Link>
