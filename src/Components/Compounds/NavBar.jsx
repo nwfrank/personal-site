@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { NavLink } from "../Atoms/NavLink";
 
 const NavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,15 +14,9 @@ const NavBar = () => {
         </Link>
 
         <nav className="hidden sm:flex space-x-6">
-          <Link to="/" className="text-gray-700 hover:text-black">
-            Home
-          </Link>
-          <Link to="/about" className="text-gray-700 hover:text-black">
-            About
-          </Link>
-          <Link to="/settings" className="text-gray-700 hover:text-black">
-            Settings
-          </Link>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/settings">Settings</NavLink>
         </nav>
 
         <div className="sm:hidden">

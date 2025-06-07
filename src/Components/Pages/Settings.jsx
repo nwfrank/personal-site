@@ -19,7 +19,10 @@ export default function Settings() {
   return (
     <div>
       <h1 className="text-copy-primary">Settings</h1>
-      <input type="checkbox" checked={isChecked} onChange={switchTheme} />
+      <div className="flex gap-4">
+        <p className="text-copy-secondary">Dark Mode</p>
+        <input type="checkbox" checked={isChecked} onChange={switchTheme} />
+      </div>
     </div>
   );
 }
