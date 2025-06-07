@@ -19,6 +19,9 @@ const NavBar = () => {
           <Link to="/about" className="text-gray-700 hover:text-black">
             About
           </Link>
+          <Link to="/settings" className="text-gray-700 hover:text-black">
+            Settings
+          </Link>
         </nav>
 
         <div className="sm:hidden">
