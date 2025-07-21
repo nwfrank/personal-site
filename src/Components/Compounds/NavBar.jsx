@@ -10,7 +10,7 @@ const NavBar = () => {
     <header className="w-full shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link to="/" className="text-xl font-bold text-copy-primary">
-          MyApp
+          NF.
         </Link>
 
         <nav className="hidden sm:flex space-x-6">
